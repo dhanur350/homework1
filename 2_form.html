@@ -1,58 +1,72 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My first form here</title>
-</head>
-<body>
-
-  <h1>Payment Form</h1>
-  <h4>Requierd Fields are followed by this .*.</h4>
-  <p style="font-size:30px">Contact Information</p> <!--Using this to write here in large size-->
-  <fieldset> 
-   <legend>Contact Information</legend>  
-  <form action="" method="GET"> 
-  <fieldset>
-  <legend>Choose</legend>
-<div style="white-space: pre">
-  <label>Are you Teacher or Student ?</label> <!--Correction done-->
-
-<label for="type">Student</label> <input type="radio" id="type" name="radiotype" value="Student">
- <!--Adding empty lines to make it spacing between them-->    
-<label for="teachertype">Teacher</label> <input type="radio" id="teachertype" name="radiotype" value="Teacher">
-</div> 
-</fieldset>
-
-<div style="white-space: pre">
- <label for="">Name .*.         </label> <input type="text" name="username" id="" placeholder="Username" required>    
-
- <label for="">Password .*.   </label> <input type="password" name="password" id="" maxlength="8" required>
-
- <label for="">Email .*.        </label> <input type="email" name="email" id="" required>
-  
-  <label>Are you an existing user ?</label> <input type="checkbox" name="checkbox">
-  <!-- Adding spaces in the label to make it look clean-->
-</fieldset>
+<h1>Payment Form</h1>
+<h4>Requierd Fields are followed by .*.</h4>
+<p>Contact Information</p>
+<div style="line-height: 1cm;">
+   <form action="" method="GET">
+      <fieldset>
+         <legend>Contact Information</legend>
+         <fieldset>
+            <legend>Choose</legend>
+            <div>
+               <label>Are you Teacher or Student ?</label>
+            </div>
+            <div>
+               <label for="type">Student</label>
+               <input name="Student or Teacher" type="radio" value="Student" >
+            </div>
+            <div>
+               <label for="teachertype">Teacher</label>
+               <input name="radiotype" type="radio" value="Teacher" >
+            </div>
+         </fieldset>
+         <div>
+            <label for="username">Name .*. </label>
+            <input name="username" required="" type="text" placeholder="Username" >
+         </div>
+         <div>
+            <label for="password">Password .*. </label>
+            <input maxlength="8" name="password" required="" type="password" >
+         </div>
+         <div>
+            <label for="email">Email .*. </label>
+            <input name="email" required="" type="email" />
+         </div>
+         <div>
+            <label>Are you an existing user ?</label>
+            <input name="Existing User" type="checkbox" />
+         </div>
+      </fieldset>
+      <p>Payment Information</p>
+      <fieldset>
+         <legend> Payment Option</legend>
+         <div>
+            <label for="Card Information">Card</label>
+            <select name="card">
+               <option value="Visa Card">Visa Green</option>
+               <option value="Visa Gold">Visa Gold</option>
+               <option value="Indian Office Card">Indian Office Card</option>
+            </select>
+            <label> </label>
+         </div>
+         <div>
+            <label>Card Number .*.</label>
+            <input name="Card Number" required maxlength="12" type="number" >
+         </div>
+         <div>
+            <label for="Expiry Month and Year">Expiry Month and Year</label>
+            <input name="Expiry Date and Month" required type="month" >
+         </div>
+         <div>
+            <label for="CVV">CVV</label>
+            <input name="CVV" max="999" required type="number" > </label>
+         </div>
+         <div>
+            <label>I agree to the terms and Conditions .*. </label>
+            <input name="Terms and Conditions" type="checkbox" >
+         </div>
+         <div>
+            <button> Validate The Payment </button>
+         </div>
+      </fieldset>
+   </form>
 </div>
-<!--Used this once to make gap between the fieldset to make it look good-->
-<p style="font-size:30px">Payment Information</p> <!--Using this to write here in large size-->
-<fieldset>
-  <Legend> Payment Option</Legend>
-  <div style="white-space: pre-line"> <!--Using this to add new line in every tag automatically within <div>  </div>-->
-  <label for="">Card</label>  <select name="card">
-  <option value="item1">Visa Green</option>
-  <option value="item2">Visa Gold</option>
-  <option value="item3">Indian Office Card</option>
-  </select>
-
-  <label> Card Number .*.</label>  <input type="number" maxlength="12" required="Number">
-  
-  <label for="">Expiry Month and Year</label> <input type="month" required>
-
-  <label for="">CVV</label>  <input type="number" max="999" required="number">
-
-  <label> I agree to the terms and Conditions .*. </label> <input type="checkbox" name="checkbox">
-
-  <button> Validate The Payment </button>
-  </fieldset>
-</body>
-</html>
