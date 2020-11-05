@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <h4>Requierd Fields are followed .*.</h4>
+    <div style="line-height: 1cm;">
+        <h>Contact Information</h>
+        <form action="" method="GET">
+            <fieldset>
+                <fieldset>
+                    <legend>Choose</legend>
+                    <div>
+                        <label>Are you Teacher or Student ?</label>
+                    </div>
+                    <div>
+                        <label for="Studenttype">Student</label>
+                        <input name="Studentteacher" type="radio" value="Student">
+                    </div>
+                    <div>
+                        <label for="Teachertype">Teacher</label>
+                        <input name="Studentteacher" type="radio" value="Teacher">
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="username">Name .*. </label>
+                    <input name="username" required type="text" placeholder="Username">
+                </div>
+                <div>
+                    <label for="password">Password .*. </label>
+                    <input minlength="8" name="password" required type="password">
+                </div>
+                <div>
+                    <label for="email">Email .*. </label>
+                    <input name="email" required type="email" />
+                </div>
+                <div>
+                    <label>Are you an existing user ?</label>
+                    <input name="Existing User" type="checkbox" />
+                </div>
+            </fieldset>
+            <h>Payment Information</h>
+            <fieldset>
+                <div>
+                    <label for="card">Card</label>
+                    <select name="card">
+                        <option value="Visa Card">Visa Green</option>
+                        <option value="Visa Gold">Visa Gold</option>
+                        <option value="Indian Office Card">Indian Office Card</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Card Number .*.</label>
+                    <input name="Card Number" required min="000000000000" max="999999999999" type="number">
+                </div>
+                <div>
+                    <label for="Expiry Month and Year">Expiry Month and Year</label>
+                    <input name="Expiry Date and Month" required type="month">
+                </div>
+                <div>
+                    <label for="CVV">CVV</label>
+                    <input name="CVV" max="999" required type="number">
+                </div>
+                <div>
+                    <label>I agree to the terms and Conditions .*. </label>
+                    <input name="Terms and Conditions" type="checkbox">
+                </div>
+                <div>
+                    <button>Validate The Payment</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
